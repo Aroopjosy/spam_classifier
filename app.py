@@ -13,7 +13,7 @@ app = Flask(__name__)
 #     print(type(context))
 #     return render_template('index.html', context= type(context))
 
-@app.route('/check/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def check():
     if request.method == 'POST':
 
